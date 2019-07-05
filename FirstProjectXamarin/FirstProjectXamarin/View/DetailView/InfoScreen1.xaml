@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstProjectXamarin.View.DetailView.InfoScreen1">
+
+
+    <StackLayout x:Name="MaintLayout">
+        <RelativeLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout x:Name="SubLayout" Orientation="Vertical" VerticalOptions="FillAndExpand" 
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=Constant,Constant=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}">
+                <Label Text="Info Screen 1"/>
+
+            </StackLayout>
+
+
+            <ActivityIndicator IsRunning="True" Color="Red" x:Name="ActivitySpinner" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.45}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=Height, Factor=0.33}"></ActivityIndicator>
+        </RelativeLayout>
+        
+      
+    </StackLayout>
+    
+
+</ContentPage>
